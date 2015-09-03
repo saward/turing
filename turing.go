@@ -124,7 +124,7 @@ func (m Machine) Print() {
 	fmt.Println(tape)
 }
 
-// Returns a string of 1's and 0's, with the leftmost character being the first filled cell.  So 001010 returns 1010
+// Returns the tape, with all leading and trailing 0's removed.  So for 001010, it returns 101
 func (m Machine) String() string {
 	var tape string
 	var first_found bool
